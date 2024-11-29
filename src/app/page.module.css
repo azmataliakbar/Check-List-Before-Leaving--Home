@@ -1,0 +1,159 @@
+/* Container Style */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 4px solid lightseagreen;
+  border-radius: 15px;
+  box-shadow: 4px 4px 16px yellow;
+}
+
+/* Heading Style */
+.heading {
+  font-size: 2.0rem;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  color: #4caf50;
+  text-shadow: 4px 4px 16px lightgreen;
+}
+
+/* List Style */
+.list {
+  list-style-type: none;
+  padding: 10px;
+  margin-top: 0px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.8;
+  line-height: 1.5;
+  color: #1F75FE;
+  text-shadow: 4px 4px 16px lightblue;
+  
+}
+
+/* List Items (flexbox for icon and text alignment) */
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Icon Style */
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+/* Label Style */
+.label {
+  flex: 1;
+  font-size: 1rem;
+}
+
+/* Checkboxes (spacing) */
+.checkboxes {
+  display: flex;
+  gap: 40px;
+  font-size: large;
+}
+
+/* Message Style */
+.message {
+  margin-top: 20px;
+  font-size: 2.0rem;
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+  text-shadow: 4px 4px 16px rgb(247, 137, 98);
+}
+
+/* Button Style */
+.button {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-top: 20px;
+  box-shadow: 4px 4px 16px rgb(124, 246, 124);
+}
+
+.button:hover {
+  background: rgb(112, 112, 243);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  /* Adjust container padding for smaller screens */
+  .container {
+    padding: 15px;
+  }
+
+  /* Adjust heading font size */
+  .heading {
+    font-size: 2.0rem;
+  }
+
+  /* Adjust list item font size for mobile */
+  .list {
+    font-size: 1.1rem;
+  }
+
+  /* Adjust list items to fit better on mobile */
+  .list-item {
+    flex-direction: column; /* Stack icon and text vertically on smaller screens */
+    align-items: flex-start; /* Align text to the left */
+  }
+
+  /* Reduce icon size */
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Adjust font size for checkboxes */
+  .checkboxes {
+    gap: 20px;
+    font-size: medium;
+  }
+
+  /* Reduce message font size for mobile */
+  .message {
+    font-size: 1.5rem;
+  }
+
+  /* Make the button font size smaller on mobile */
+  .button {
+    font-size: 24px;
+    padding: 8px;
+  }
+}
+
+/* Extra Small Screens (Phones in portrait mode) */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .list {
+    font-size: 1rem; /* Smaller list item font */
+  }
+
+  .message {
+    font-size: 1.2rem; /* Smaller message font */
+  }
+
+  /* Further reduce button font size */
+  .button {
+    font-size: 20px;
+    padding: 6px;
+  }
+}

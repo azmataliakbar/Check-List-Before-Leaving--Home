@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px; /* Add some padding for smaller screens */
+}
+
+.card {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+.heading {
+  text-align: center;
+  color: #333;
+  font-size: 2rem; /* Default size */
+}
+
+/* List Styles */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Button Styles */
+.button {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.button:hover {
+  background: #45a049;
+}
+
+/* Message Styles */
+.message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #d32f2f;
+  font-size: 1.2rem; /* Default size */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust card padding for mobile */
+  .card {
+    padding: 15px;
+  }
+
+  /* Adjust heading font size for mobile */
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  /* Adjust list item margin and icon size */
+  .item {
+    margin-bottom: 12px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
+
+  /* Adjust button font size */
+  .button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* Adjust message font size */
+  .message {
+    font-size: 1.4rem;
+  }
+}
+
+/* Extra Small Screens (Phones in portrait mode) */
+@media (max-width: 480px) {
+  /* Further reduce card padding */
+  .card {
+    padding: 10px;
+  }
+
+  /* Further reduce heading font size */
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  /* Reduce list item margin */
+  .item {
+    margin-bottom: 10px;
+  }
+
+  /* Adjust icon size */
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  /* Adjust button font size */
+  .button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  /* Adjust message font size */
+  .message {
+    font-size: 1.2rem;
+  }
+}
