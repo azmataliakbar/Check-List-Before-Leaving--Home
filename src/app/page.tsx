@@ -89,7 +89,9 @@ export default function Home() {
           Validate Checklist
         </button>
         {message && <p className={styles.message}>{message}</p>}
+        <h3 className="text-center font-bold text-gray-300">Author: Azmat Ali</h3>
       </div>
+      
     </main>
   );
 }
